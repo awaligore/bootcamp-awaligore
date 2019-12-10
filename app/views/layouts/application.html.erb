@@ -11,20 +11,22 @@
   <body>
     <header class="row">
       <div class="col-3">
-        <div class="circle">
-          <br />
-          It's time
-          <br />
-          to be
-          <br />
-          positive
-        </div>
+        <%= link_to root_path, class: "logo" do %>
+          <div class="circle">
+            <br />
+            It's time
+            <br />
+            to be
+            <br />
+            positive
+          </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
-        Splurting out unsolicited advice and entrepreneurship since 2019
+        Splurting out unsolicited advice and positivity since 2019
       </div>
       <div class="col-5 links">
-        <%= link_to "Contribute", "#" %>
+        <%= link_to "Contribute", new_quote_path %>
         <%= link_to "About", "#" %>
       </div>
     </header>
@@ -41,7 +43,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <%= link_to "This isn't enough, I need more", "#", class: "next-quote" %>
+          <%= link_to "This isn't enough, I need more", root_path, class: "next-quote" %>
         </div>
         <div class="col-6 footer-blurb">
           Patiently created by <a href="[file:///Users/AWaligore/Desktop/Portfolio/index.html]">[Andrew Waligore]</a><br />
